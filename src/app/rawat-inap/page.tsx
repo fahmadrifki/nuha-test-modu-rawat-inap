@@ -167,7 +167,7 @@ export default function RawatInapPage() {
             <p className="text-gray-500 mb-6">Mulai dengan mendaftarkan pasien pertama</p>
             <button
               onClick={() => setShowForm(true)}
-              className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-500/30 focus:ring-offset-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md border border-blue-500/20 flex items-center space-x-3"
+              className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-500/30 focus:ring-offset-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md border border-blue-500/20 inline-flex items-center space-x-3"
             >
               <div className="flex items-center justify-center w-5 h-5 bg-white/20 rounded-full">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
