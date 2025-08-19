@@ -18,7 +18,7 @@ export default function PatientListTable({ patients, onEdit, onView }: PatientLi
 
   // Filter dan sort data
   const filteredAndSortedPatients = useMemo(() => {
-    let filtered = patients.filter(patient => {
+    const filtered = patients.filter(patient => {
       const matchesSearch = 
         patient.nama.toLowerCase().includes(searchTerm.toLowerCase()) ||
         patient.nik.includes(searchTerm);

@@ -11,7 +11,7 @@ export default function RawatInapPage() {
   const [patients, setPatients] = useState<Patient[]>([]);
   const [showForm, setShowForm] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [editingPatient, setEditingPatient] = useState<Patient | null>(null);
+  const [setEditingPatient] = useState<Patient | null>(null);
 
   // Simulate loading dengan delay 500ms
   useEffect(() => {
