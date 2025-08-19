@@ -5,7 +5,7 @@ import { Patient } from '@/types/patient';
 
 interface PatientListTableProps {
   patients: Patient[];
-  onEdit: (patient: Patient) => void;
+  onEdit: () => void;
   onView: (patient: Patient) => void;
 }
 
@@ -209,7 +209,7 @@ export default function PatientListTable({ patients, onEdit, onView }: PatientLi
                       Lihat
                     </button>
                     <button
-                      onClick={() => onEdit(patient)}
+                      onClick={() => onEdit()}
                       className="inline-flex items-center px-3 py-2 text-sm font-medium text-green-600 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 hover:border-green-300 hover:text-green-700 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-green-500/30 focus:ring-offset-1"
                     >
                       <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

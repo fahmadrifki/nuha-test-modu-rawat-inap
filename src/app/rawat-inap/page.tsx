@@ -11,7 +11,6 @@ export default function RawatInapPage() {
   const [patients, setPatients] = useState<Patient[]>([]);
   const [showForm, setShowForm] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [setEditingPatient] = useState<Patient | null>(null);
 
   // Simulate loading dengan delay 500ms
   useEffect(() => {
@@ -35,14 +34,12 @@ export default function RawatInapPage() {
 
     setPatients(prev => [newPatient, ...prev]);
     setShowForm(false);
-    setEditingPatient(null);
     
     // Show success message
     alert('Pasien berhasil didaftarkan!');
   };
 
-  const handleEditPatient = (patient: Patient) => {
-    setEditingPatient(patient);
+  const handleEditPatient = () => {
     setShowForm(true);
   };
 
@@ -53,7 +50,6 @@ export default function RawatInapPage() {
 
   const handleCancelForm = () => {
     setShowForm(false);
-    setEditingPatient(null);
   };
 
   if (isLoading) {
